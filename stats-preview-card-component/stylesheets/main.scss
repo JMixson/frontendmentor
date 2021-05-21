@@ -1,0 +1,193 @@
+/*---------------------- VARIABLES ----------------------*/
+/* colors */
+$main-color: hsl(233, 47%, 7%);
+$card-color: hsl(244, 38%, 16%);
+$accent-color: hsl(277, 64%, 61%);
+$white-color: hsl(0, 0%, 100%);
+$white-color-v2: hsla(0, 0%, 100%, 0.75);
+$white-color-v3: hsla(0, 0%, 100%, 0.6);
+
+/* fonts */
+$main-font-family: "Lexend Deca", sans-serif;
+$special-font-family: "Inter", sans-serif;
+
+/*---------------------- MIXINS ----------------------*/
+/* media query mixin */
+@mixin breakpoint($class) {
+  @if $class == xsm {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $class == sm {
+    @media (min-width: 600px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media (min-width: 750px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media (min-width: 950px) {
+      @content;
+    }
+  } @else if $class == xlg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $class == xxlg {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xsm, sm, md, lg, xlg, xxlg";
+  }
+}
+
+/*---------------------- HTML, ALL, BODY STYLES ----------------------*/
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-size: calc(14px + 0.8vw);
+  font-family: $main-font-family;
+  overflow-x: hidden;
+  background-color: $main-color;
+  line-height: 1.75;
+  padding: 1em;
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.25rem, 20px;
+  }
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* text styles */
+h1,
+h2 {
+  font-family: $special-font-family;
+  color: $white-color;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+p {
+  color: $white-color-v2;
+}
+
+/* color styles */
+.text-accent {
+  color: $accent-color;
+}
+
+/* image styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*---------------------- LAYOUT ----------------------*/
+/* display styles */
+
+/* flex styles */
+.flex {
+  display: flex;
+}
+
+/* grid styles */
+.grid {
+  display: grid;
+  grid-gap: 1em;
+}
+
+.col-1 {
+  grid-template-columns: 1fr;
+}
+
+.col-2 {
+  @extend .col-1;
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.col-3 {
+  @extend .col-1;
+
+  @include breakpoint(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*---------------------- COMPONENTS ----------------------*/
+/* card styles */
+.card {
+  background-color: $card-color;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+
+  @include breakpoint(md) {
+    text-align: left;
+  }
+}
+
+.card-overlay {
+  width: 100%;
+  height: calc(100% - 25px);
+  background-color: $accent-color;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+  z-index: 11;
+}
+
+.card-img picture img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  filter: opacity(0.5);
+  position: relative;
+  z-index: 10;
+}
+
+.card-text {
+  padding: 1em;
+}
+
+.stat {
+  text-transform: uppercase;
+  color: $white-color-v3;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.1625em;
+}
+
+/* attribution styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

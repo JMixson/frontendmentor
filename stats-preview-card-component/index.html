@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card grid col-2">
+      <div class="card-img">
+        <div class="card-overlay">
+          <picture>
+            <source
+              media="(min-width:465px)"
+              srcset="images/image-header-mobile.jpg"
+              size="100%"
+            />
+            <source
+              media="(min-width:650px)"
+              srcset="images/image-header-desktop.jpg"
+              size="100%"
+            />
+            <img
+              src="images/image-header-desktop.jpg"
+              size="100%"
+              alt="People working"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="card-text">
+        <h1>
+          Get <span class="text-accent">insights</span> that help your business
+          grow.
+        </h1>
+
+        <p>
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+
+        <div class="card-stats grid col-3">
+          <h2>10k+<br /><span class="stat">companies</span></h2>
+
+          <h2>314<br /><span class="stat">templates</span></h2>
+          <h2>12M+<br /><span class="stat">queries</span></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
