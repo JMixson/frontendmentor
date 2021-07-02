@@ -26,7 +26,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 |                          Desktop Version                           |                          Mobile Version                          |
 | :----------------------------------------------------------------: | :--------------------------------------------------------------: |
-| ![desktop screenshot](./images\screenshots\screenshot-desktop.png) | ![mobile screenshot](./images\screenshots\screenshot-mobile.png) |
+| ![desktop screenshot](.\images\screenshots\screenshot-desktop.png) | ![mobile screenshot](.\images\screenshots\screenshot-mobile.png) |
 
 ### Links
 
