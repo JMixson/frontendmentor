@@ -24,13 +24,13 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Screenshots
 
-|                         Desktop Version                          |                         Mobile Version                         |
-| :--------------------------------------------------------------: | :------------------------------------------------------------: |
-| ![desktop screenshot](images\screenshots\screenshot-desktop.png) | ![mobile screenshot](images\screenshots\screenshot-mobile.png) |
+|                          Desktop Version                           |                          Mobile Version                          |
+| :----------------------------------------------------------------: | :--------------------------------------------------------------: |
+| ![desktop screenshot](./images\screenshots\screenshot-desktop.png) | ![mobile screenshot](./images\screenshots\screenshot-mobile.png) |
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/JMixson/frontendmentor/tree/main/3-column-preview-card-component](https://github.com/JMixson/frontendmentor/tree/main/3-column-preview-card-component)
 - Live Site URL: [https://jmixson-3-column-card-component.netlify.app/](https://jmixson-3-column-card-component.netlify.app/)
 
 ## My process
