@@ -24,9 +24,9 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Screenshots
 
-|                          Desktop Version                           |                          Mobile Version                          |
-| :----------------------------------------------------------------: | :--------------------------------------------------------------: |
-| ![desktop screenshot](.\images\screenshots\screenshot-desktop.png) | ![mobile screenshot](.\images\screenshots\screenshot-mobile.png) |
+|                                                                   Desktop Version                                                                    |                                                                   Mobile Version                                                                   |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ![desktop screenshot](https://github.com/JMixson/frontendmentor/tree/main/3-column-preview-card-component\images\screenshots\screenshot-desktop.png) | ![mobile screenshot](https://github.com/JMixson/frontendmentor/tree/main/3-column-preview-card-component\images\screenshots\screenshot-mobile.png) |
 
 ### Links
 
