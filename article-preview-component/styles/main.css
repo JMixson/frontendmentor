@@ -200,7 +200,8 @@ article {
   }
 }
 
-.tooltip:hover .share-overlay {
+.tooltip:hover .share-overlay,
+.tooltip:focus-within .share-overlay {
   visibility: visible;
   opacity: 1;
 }
@@ -212,13 +213,15 @@ article {
   font-weight: 700;
 }
 
+/* social icons styles */
 .social-icons img {
   display: inline-block;
   margin-left: 0.75em;
   transition: all 300ms ease-in-out;
 }
 
-.share-overlay img:hover {
+.social-icons a:hover img,
+.social-icons a:focus img {
   cursor: pointer;
   transform: scale(1.2);
 }
@@ -242,7 +245,8 @@ article {
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
-.btn-share:hover {
+.btn-share:hover,
+.btn-share:focus-within {
   background-color: var(--dark-blue);
 }
 
@@ -250,7 +254,7 @@ article {
   fill: var(--dark-blue);
 }
 .btn-share:hover svg,
-.btn-share:focus svg {
+.btn-share:focus-within svg {
   fill: var(--white);
 }
 
