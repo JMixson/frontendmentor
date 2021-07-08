@@ -86,7 +86,7 @@ footer {
 
 /*---------------------- DISPLAY STYLES ----------------------*/
 .container {
-  padding: 1em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +131,7 @@ article {
 }
 
 .article-img {
-  margin-bottom: -5px;
+  margin-bottom: -4px;
 }
 
 .article-img img {
@@ -155,7 +155,6 @@ article {
 
 .article-footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 1.25em;
   position: relative;
@@ -165,6 +164,15 @@ article {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.article-footer-text {
+  margin: 0 1em;
+}
+
+/* tooltip styles */
+.tooltip {
+  margin-left: auto;
 }
 
 /* share overlay styles */
