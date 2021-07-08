@@ -18,8 +18,6 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -31,20 +29,18 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+|          Desktop Version           |          Mobile Version          |
+| :--------------------------------: | :------------------------------: |
+| ![desktop screenshot](desktop.png) | ![mobile screenshot](mobile.png) |
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+|             Desktop Hover Version              |             Mobile Hover Version             |
+| :--------------------------------------------: | :------------------------------------------: |
+| ![desktop hover screenshot](desktop-hover.png) | ![mobile hover screenshot](mobile-hover.png) |
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT/hub/article-preview-using-flexbox-4JHJuSUwZ](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT/hub/article-preview-using-flexbox-4JHJuSUwZ)
+- Live Site URL: [https://jmixson-article-preview-component.netlify.app/](https://jmixson-article-preview-component.netlify.app/)
 
 ## My process
 
@@ -53,52 +49,23 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I learned how to create a tooltip and more about absolute positioning. Besides that, I also became more familiar with Firefox's developer tools and different ways to check pseudo elements/classes in both Chrome and Firefox dev tools.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'm still working to improve my absolute positioning skills, especially when scaling to different sizes. I also plan on learning how to manipulate SVGs in CSS and more about accessibility.
 
 ### Useful resources
 
 - [CSS Tooltip](https://www.w3schools.com/css/css_tooltip.asp) - This page describes how to create a style a tooltip.
+- [Learn Flexbox for free](https://scrimba.com/learn/flexbox) - A Scrimba course for flexbox taught by Per Harald Borgen.
+- [CSS The object-fit Property](https://www.w3schools.com/css/css3_object-fit.asp) - A reference to the CSS `object-fit` property.
+- [Change Color of SVG on Hover](https://css-tricks.com/change-color-of-svg-on-hover/) - This article describes the different ways to change the color of an svg on hover.
 - [CSS in Action: Invisible Content Just for Screen Reader Users](https://webaim.org/techniques/css/invisiblecontent/) - This article examples how to hide content in a way that is still accessible to screen readers.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
@@ -106,10 +73,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Frontend Mentor - [@JMixson](https://www.frontendmentor.io/profile/jmixson)
 - Github - [@JMixson](https://www.github.com/jmixson)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- [Box-Shadow CSS Generator](https://html-css-js.com/css/generator/box-shadow/) - Tool used to generate CSS box-shadow properties. I used this to help quickly generate a box shadow for my article component.
+- [Normalize.css](https://necolas.github.io/normalize.css/) - A CSS reset file that improves cross-browser consistency.
