@@ -68,4 +68,6 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab odit minus quae rem
 
 ## Acknowledgments
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab odit minus quae rem a fuga inventore ullam dolor temporibus perferendis! Illum, cum natus numquam at aperiam necessitatibus explicabo reiciendis error.
+- [Link](Link) - text.
+- [Normalize.css](https://necolas.github.io/normalize.css/) - A CSS reset file that improves cross-browser consistency.
+- [Box Sizing | CSS-Tricks](https://css-tricks.com/box-sizing/) - This article explains what the `box-sizing` property is and how to implement. I use the vendor prefixes for better sizing.
