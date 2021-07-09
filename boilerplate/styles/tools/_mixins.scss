@@ -1,0 +1,162 @@
+/*---------------------- MIXINS ----------------------*/
+/* grid */
+@mixin grid-col-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+/* media query mixin */
+@mixin breakpoint($class) {
+  @if $class == xsm {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $class == sm {
+    @media (min-width: 600px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media (min-width: 750px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media (min-width: 950px) {
+      @content;
+    }
+  } @else if $class == xlg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $class == xxlg {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xsm, sm, md, lg, xlg, xxlg";
+  }
+}
+
+/* colors */
+$colors: (
+  dark-blue: hsl(233, 26%, 24%),
+  green: hsl(136, 65%, 51%),
+  cyan: hsl(192, 70%, 51%),
+  grayish-blue: hsl(233, 8%, 62%),
+  light-grayish-blue: hsl(220, 16%, 96%),
+  light-gray: hsl(0, 0%, 98%),
+  white: hsl(0, 0%, 100%),
+);
+
+@mixin color-modifiers($attribute: "color") {
+  @each $name, $hex in $colors {
+    &-#{$name} {
+      #{$attribute}: $hex;
+    }
+  }
+}
+
+$align: (
+  left: left,
+  right: right,
+  center: center,
+);
+
+@mixin align-modifiers($attribute: "text-align") {
+  @each $name, $option in $align {
+    &-#{$name} {
+      #{$attribute}: $option;
+    }
+  }
+}
+
+$transform: (
+  uppercase: uppercase,
+  lowercase: lowercase,
+  capitalize: capitalize,
+);
+
+@mixin transform-modifiers($attribute: "text-transform") {
+  @each $name, $option in $transform {
+    &-#{$name} {
+      #{$attribute}: $option;
+    }
+  }
+}
+
+$weights: (
+  bold: 700,
+  normal: 400,
+);
+
+@mixin weight-modifiers($attribute: "font-weight") {
+  @each $name, $option in $weights {
+    &-#{$name} {
+      #{$attribute}: $option;
+    }
+  }
+}
+
+$padding-margin: (
+  quarter: 0.25em,
+  half: 0.5em,
+  0: 0,
+  1: 1em,
+  2: 2em,
+  3: 3em,
+  4: 4em,
+  5: 5em,
+  6: 6em,
+);
+
+@mixin padding-margin-modifiers($attribute: "padding") {
+  @each $name, $value in $padding-margin {
+    &-#{$name} {
+      #{$attribute}: $value;
+    }
+  }
+}
+
+$pm-x-axis: (
+  quarter: 0 0.25em,
+  half: 0 0.5em,
+  1: 0 1em,
+  2: 0 2em,
+  3: 0 3em,
+  4: 0 4em,
+  5: 0 5em,
+  6: 0 6em,
+);
+
+@mixin pm-x-axis-modifiers($attribute: "padding") {
+  @each $name, $value in $pm-x-axis {
+    &-#{$name} {
+      #{$attribute}: $value;
+    }
+  }
+}
+
+$pm-y-axis: (
+  quarter: 0.25em 0,
+  half: 0.5em 0,
+  1: 1em 0,
+  2: 2em 0,
+  3: 3em 0,
+  4: 4em 0,
+  5: 5em 0,
+  6: 6em 0,
+);
+
+@mixin pm-y-axis-modifiers($attribute: "padding") {
+  @each $name, $value in $pm-y-axis {
+    &-#{$name} {
+      #{$attribute}: $value;
+    }
+  }
+}
+
+/* transitions */
+@mixin transition-300 {
+  transition: all 300ms ease-in-out;
+  backface-visibility: hidden;
+}
