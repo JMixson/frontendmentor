@@ -117,40 +117,20 @@ $padding-margin: (
   }
 }
 
-$pm-x-axis: (
-  quarter: 0 0.25em,
-  half: 0 0.5em,
-  1: 0 1em,
-  2: 0 2em,
-  3: 0 3em,
-  4: 0 4em,
-  5: 0 5em,
-  6: 0 6em,
-);
-
 @mixin pm-x-axis-modifiers($attribute: "padding") {
-  @each $name, $value in $pm-x-axis {
+  @each $name, $value in $padding-margin {
     &-#{$name} {
-      #{$attribute}: $value;
+      #{$attribute}-right: $value;
+      #{$attribute}-left: $value;
     }
   }
 }
 
-$pm-y-axis: (
-  quarter: 0.25em 0,
-  half: 0.5em 0,
-  1: 1em 0,
-  2: 2em 0,
-  3: 3em 0,
-  4: 4em 0,
-  5: 5em 0,
-  6: 6em 0,
-);
-
 @mixin pm-y-axis-modifiers($attribute: "padding") {
-  @each $name, $value in $pm-y-axis {
+  @each $name, $value in $padding-margin {
     &-#{$name} {
-      #{$attribute}: $value;
+      #{$attribute}-top: $value;
+      #{$attribute}-bottom: $value;
     }
   }
 }
