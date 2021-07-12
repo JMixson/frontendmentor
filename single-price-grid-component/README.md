@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT/hub/article-preview-using-flexbox-4JHJuSUwZ](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT/hub/article-preview-using-flexbox-4JHJuSUwZ)
+- Solution URL: [https://www.frontendmentor.io/solutions/price-grid-using-css-grid-rtHSLUynV](https://www.frontendmentor.io/solutions/price-grid-using-css-grid-rtHSLUynV)
 - Live Site URL: [https://jmixson-single-price-grid-component.netlify.app/](https://jmixson-single-price-grid-component.netlify.app/)
 
 ## My process
