@@ -30,7 +30,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/card-component-using-css-grid-YjE47te4L](https://www.frontendmentor.io/solutions/card-component-using-css-grid-YjE47te4L)
 - Live Site URL: [https://jmixson-3-column-card-component.netlify.app/](https://jmixson-3-column-card-component.netlify.app/)
 
 ## My process
