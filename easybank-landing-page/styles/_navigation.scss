@@ -1,4 +1,5 @@
 /*------------------- NAVIGATION ------------------*/
+/* general nav styles */
 nav {
   display: flex;
 }
@@ -6,3 +7,55 @@ nav {
 nav ul {
   list-style-type: none;
 }
+
+/* header nav styles */
+header {
+  nav {
+    justify-content: space-between;
+    position: relative;
+    padding: 1em;
+    z-index: 9999;
+  }
+
+  .nav-mobile-controls {
+    margin-right: auto;
+  }
+
+  .nav-mobile-overlay {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 1em;
+    padding-top: 3.5em;
+    // background-color: $grayish-blue;
+    left: 0;
+    top: 0;
+    // z-index: 9000;
+  }
+
+  .nav-list {
+    background-color: $white;
+    padding: 1em;
+
+    li.links {
+      display: block;
+      margin: 1em 0;
+      font-weight: 400;
+    }
+  }
+}
+
+/* footer nav styles */
+footer {
+  nav {
+    justify-content: center;
+  }
+
+  ul > li {
+    display: block;
+    margin: 1em 0;
+    font-weight: 400;
+  }
+}
+
+// body > div.container > footer > nav >

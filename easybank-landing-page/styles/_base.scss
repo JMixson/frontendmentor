@@ -30,6 +30,7 @@ body {
 body {
   font-size: $base-font-size;
   font-family: $main-font-family;
+  font-weight: 300;
   color: $grayish-blue;
   overflow-x: hidden;
 }
@@ -46,34 +47,36 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 300;
+  font-weight: 400;
   color: $dark-blue;
+
+  @extend .text-center-mobile;
 }
 
 h1 {
-  font-size: calc(#{$base-font-size} * 1.5);
+  font-size: calc(#{$base-font-size} * 2);
 }
 
 h2 {
-  font-size: calc(#{$base-font-size} * 1.25);
+  font-size: calc(#{$base-font-size} * 1.75);
 }
 
 h3 {
-  font-size: calc(#{$base-font-size} * 1.15);
+  font-size: calc(#{$base-font-size} * 1.25);
 }
 
 h4 {
-  font-size: calc(#{$base-font-size} * 0.75);
+  font-size: calc(#{$base-font-size} * 1.05);
+}
+
+p {
+  line-height: 1.75rem;
 }
 
 /* genetic class text styles */
 .text {
   //text-transform
   @include transform-modifiers;
-}
-
-.text-italic {
-  font-style: italic;
 }
 
 .text {
@@ -84,6 +87,14 @@ h4 {
 .text {
   //text-align
   @include align-modifiers;
+}
+
+.text-center-mobile {
+  text-align: center;
+
+  @include breakpoint(md) {
+    text-align: left;
+  }
 }
 
 /*---------------------- COLORS ----------------------*/
@@ -117,9 +128,4 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-/* footer styles */
-footer {
-  margin-top: 1em;
 }

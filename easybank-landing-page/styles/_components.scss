@@ -1,4 +1,67 @@
 /*------------------- COMPONENTS ------------------*/
+/* button styles */
+a.btn {
+  display: inline-block;
+  background: linear-gradient(115deg, $green 0%, $cyan 100%);
+  font-weight: 400;
+  color: $white;
+  margin-top: 1em;
+  padding: 0.75em 2em;
+  border-radius: 25px;
+  cursor: pointer;
+
+  @include transition-300;
+
+  &:hover {
+    background: linear-gradient(115deg, $green 0%, $cyan 90%);
+  }
+}
+
+/* hero styles */
+.hero-img {
+  position: relative;
+}
+
+.hero-img-front {
+  position: absolute;
+  top: -7.5em;
+  // z-index: -50;
+}
+
+.hero-img-back {
+  position: relative;
+  // z-index: -100;
+}
+
+// .hero-img-back {
+//   position: absolute;
+//   top: 0;
+// }
+
+/* article styles */
+.article {
+  margin: 1.5em;
+  background-color: $white;
+  border-radius: 10px / 10px;
+}
+
+.article-img {
+  border-radius: 10px 10px 0 0;
+}
+
+.article-text {
+  padding: 1.5em;
+}
+
+/* social icons styles */
+.social-icons {
+  margin-top: 1.5em;
+
+  & > * {
+    display: inline-block;
+    margin-left: 0.5em;
+  }
+}
 
 /* attribution styles */
 .attribution {
