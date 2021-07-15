@@ -43,14 +43,6 @@ h2 {
   margin-top: 1.5em;
   margin-bottom: 0.25em; }
 
-h3 {
-  font-size: calc(0.9375rem * 0.85);
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 0.075rem;
-  color: rgba(255, 255, 255, 0.6);
-  margin: 0; }
-
 p {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.75; }
@@ -144,19 +136,78 @@ footer {
 /*---------------------- COMPONENTS ----------------------*/
 /* card styles */
 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #1b1938;
-  border-radius: 10px; }
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 900px; }
+  @media (min-width: 650px) {
+    .card {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
 .card-overlay {
   background-color: #9532d2;
   border-radius: 10px 10px 0 0; }
 
-.card-img picture img {
+.card-img {
+  overflow: hidden; }
+  @media (min-width: 650px) {
+    .card-img {
+      width: 50%;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; } }
+
+.card-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 10px 10px 0 0;
   opacity: 0.7; }
+  @media (min-width: 650px) {
+    .card-img img {
+      border-radius: 0 0 10px 0; } }
 
 .card-text {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   padding: 2.5em 1.5em; }
+  @media (min-width: 650px) {
+    .card-text {
+      width: 50%;
+      padding: 3em; } }
+
+.card-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media (min-width: 650px) {
+    .card-stats {
+      gap: 4em;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.stat {
+  font-size: calc(0.9375rem * 0.85);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.075rem;
+  color: rgba(255, 255, 255, 0.6); }
 
 /* attribution styles */
 .attribution {

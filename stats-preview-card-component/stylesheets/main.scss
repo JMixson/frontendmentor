@@ -93,15 +93,6 @@ h2 {
   margin-bottom: 0.25em;
 }
 
-h3 {
-  font-size: calc(#{$base-font-size} * 0.85);
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 0.075rem;
-  color: $gray;
-  margin: 0;
-}
-
 p {
   color: $light-gray;
   line-height: 1.75;
@@ -205,22 +196,75 @@ footer {
 /*---------------------- COMPONENTS ----------------------*/
 /* card styles */
 .card {
+  display: flex;
+  flex-direction: column;
   background-color: $desaturated-blue;
   border-radius: 10px;
+  overflow: hidden;
+  max-width: 900px;
+
+  @include breakpoint(md) {
+    flex-direction: row;
+  }
 }
 
 .card-overlay {
+  // max-width: 650px;
+  // max-height: 650px;
+  // max-width: 100%;
+  // height: auto;
   background-color: darken($violet, 10%);
   border-radius: 10px 10px 0 0;
 }
 
-.card-img picture img {
+.card-img {
+  // height: 300px;
+  overflow: hidden;
+
+  @include breakpoint(md) {
+    width: 50%;
+    order: 2;
+  }
+}
+
+.card-img img {
+  // max-width: 650px;
+  // max-height: 650px;
+  object-fit: contain;
   border-radius: 10px 10px 0 0;
   opacity: 0.7;
+
+  @include breakpoint(md) {
+    border-radius: 0 0 10px 0;
+  }
 }
 
 .card-text {
+  order: 1;
   padding: 2.5em 1.5em;
+
+  @include breakpoint(md) {
+    width: 50%;
+    padding: 3em;
+  }
+}
+
+.card-stats {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(md) {
+    gap: 4em;
+    flex-direction: row;
+  }
+}
+
+.stat {
+  font-size: calc(#{$base-font-size} * 0.85);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.075rem;
+  color: $gray;
 }
 
 /* attribution styles */
