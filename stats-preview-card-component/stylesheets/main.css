@@ -136,23 +136,15 @@ footer {
 /*---------------------- COMPONENTS ----------------------*/
 /* card styles */
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: #1b1938;
   border-radius: 10px;
   overflow: hidden;
   max-width: 900px; }
   @media (min-width: 650px) {
     .card {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
+      grid-template-columns: repeat(2, 1fr); } }
 
 .card-overlay {
   background-color: #9532d2;
@@ -162,14 +154,14 @@ footer {
   overflow: hidden; }
   @media (min-width: 650px) {
     .card-img {
-      width: 50%;
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
               order: 2; } }
 
 .card-img img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px 10px 0 0;
   opacity: 0.7; }
   @media (min-width: 650px) {
@@ -183,7 +175,6 @@ footer {
   padding: 2.5em 1.5em; }
   @media (min-width: 650px) {
     .card-text {
-      width: 50%;
       padding: 3em; } }
 
 .card-stats {

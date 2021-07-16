@@ -196,41 +196,34 @@ footer {
 /*---------------------- COMPONENTS ----------------------*/
 /* card styles */
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: $desaturated-blue;
   border-radius: 10px;
   overflow: hidden;
   max-width: 900px;
 
   @include breakpoint(md) {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .card-overlay {
-  // max-width: 650px;
-  // max-height: 650px;
-  // max-width: 100%;
-  // height: auto;
   background-color: darken($violet, 10%);
   border-radius: 10px 10px 0 0;
 }
 
 .card-img {
-  // height: 300px;
   overflow: hidden;
 
   @include breakpoint(md) {
-    width: 50%;
     order: 2;
   }
 }
 
 .card-img img {
-  // max-width: 650px;
-  // max-height: 650px;
-  object-fit: contain;
+  width: 100%;
+  object-fit: cover;
   border-radius: 10px 10px 0 0;
   opacity: 0.7;
 
@@ -244,7 +237,6 @@ footer {
   padding: 2.5em 1.5em;
 
   @include breakpoint(md) {
-    width: 50%;
     padding: 3em;
   }
 }
